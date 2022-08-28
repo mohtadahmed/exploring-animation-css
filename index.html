@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>My WebPage</title>
+    <style>
+        .container, .inner{
+            height: 200px;
+            width: 200px;
+            border: 2px solid salmon;
+        }
+        .container{
+            background-color: darkslateblue;
+        }
+        .inner{
+            background-color: chocolate;
+            transform: translate(100px) scale(0.75) rotate(45deg);
+        }
+        #box-2{
+            transition: transform 5s linear;
+        }
+        #box-2:hover {
+            transform: translate(500px) rotate(-45deg) scale(.50);
+        }
+    </style>
+</head>
+<body>
+    <h1>Sam Tech IT Ltd</h1>
+    <div class="container box">
+        <div class="inner">box-1</div>
+    </div>
+    <div class="container box">
+        <div id="box-2" class="inner">box-2</div>
+    </div>
+    <div class="container box">
+        <div class="inner">box-3</div>
+    </div>
+</body>
+</html>
